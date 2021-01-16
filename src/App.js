@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+//importing components
+import Home from './components/home'
+import './App.css'
+import Lokacije from './components/lokacije '
+import LoaderTest from './components/loaderTest'
+import Kontakt from './components/kontakt'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App=()=>{
+
+    return(
+        <>
+            <Home />
+            <Lokacije />
+            <Kontakt />
+        </>
+    )
 }
-
 export default App;
